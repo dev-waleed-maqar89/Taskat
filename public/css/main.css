@@ -1,0 +1,85 @@
+body {
+    background-color: rgba(80, 80, 255, .6);
+}
+
+.navbar-container {
+    background-color: rgba(100, 100, 255, .4);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    width: 100%;
+}
+
+.main-navbar {
+    list-style-type: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 8%);
+    grid-gap: 5%;
+}
+
+.navbar-link,
+.navbar-link:hover {
+    all: unset;
+    font-weight: 700;
+}
+
+.navbar-link:hover {
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.navbar-image {
+    display: inline;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.single-task-steps {
+    z-index: 999;
+    position: absolute;
+    width: 60%;
+    background-color: rgba(200, 200, 255, .6);
+    padding: 1% 5%;
+    top: 30%;
+    left: 30%;
+}
+
+.complete-check,
+.single-task-name {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.uncompleted {
+    border: 1px solid black;
+    width: 15px;
+    height: 15px;
+
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.add-tag-form {
+    min-width: 20% !important;
+}
+
+.add-tag-form input,
+.add-tag-form input:focus {
+    background-color: rgba(180, 180, 255, .4);
+    border: .5px solid rgba(100, 100, 255, .2);
+    outline: none;
+}
+
+.add-tag-form input::-webkit-calendar-picker-indicator {
+    display: none !important;
+    background-color: rgba(180, 180, 255, .4);
+}
+
+.single-task-tag-name {
+    cursor: pointer;
+    font-size: .75rem;
+}
